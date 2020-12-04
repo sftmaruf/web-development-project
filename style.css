@@ -1,0 +1,23 @@
+body{
+    background: #FFFFFF;
+}
+.works-items > p{
+    margin-right: 5px;
+    color: #9ea3a6;
+    padding: 3px 10px;
+    border-radius: 20px;
+    border: 1px solid #9ea3a6;
+}
+.text-color, .footer-elements > p,
+.footer-elements > p > a{
+    color: #9ea3a6;
+}
+.footer-line{
+    width: 60%;
+}
+.footer-line > p{
+    text-align: center;
+}
+hr{
+    border: 1px solid #9ea3a6;
+}

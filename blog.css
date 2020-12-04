@@ -1,0 +1,110 @@
+body{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+main{
+    margin-top: 10px;
+}
+.top-navbar{
+    box-shadow: 0 0 2px gray;
+}
+.center-navbar-alignment{
+    height: 50px;
+    display: flex;
+    position: relative;
+    top: -15px;
+}
+.sidebar{
+    padding-left: 10px;
+    margin-bottom: 30px;
+}
+a{
+    color: black;
+}
+.sidebar > a, .selection > a{
+    font-family: sans-serif;
+    padding: 7px 10px;
+    font-weight: 500;
+    display: block;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+.sidebar > a:hover, .hover-effect > a:hover{
+    outline: none;
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: rgb(229, 233, 238);
+}
+.icon-container{
+    margin-top: 30px;
+    color: gray;
+}
+.icon-container > i{
+    margin-left: 5px;
+    margin-right: 10px;
+    font-size: 25px;
+}
+.icon-container > i:hover{
+    color:rgb(83, 83, 83);
+}
+.tags-container{
+    height: 200px;
+    overflow: auto;
+}
+.selection{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.selection > button{
+    display: none;
+    position: absolute;
+    right: 5px;
+}
+.selection > a{
+    min-width: 100%;
+}
+.selection > a:hover + button, .selection > button:hover{
+   display: block;
+   animation-name: fadeInOpacity;
+   animation-iteration-count: 1;
+   animation-timing-function: ease-in;
+   animation-duration: 0.3s;
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.active{
+    position: relative;
+}
+.active:after{
+    content: "";
+    display: block;
+    margin-top: auto;
+    margin-top: 6px;
+    border-bottom: 2px solid  #4150f5;
+}
+.option-container{
+    height: 40px;
+}
+.active:hover::after{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 2px;
+}
+.login-card{
+    width: 325.5px;
+    height: 325px;
+    background-color: #f8f8f2;
+}
+.coronadetails-card{
+    width: 325.5px;
+    height: 152px;
+    background-color: #f8f8f2;
+}
