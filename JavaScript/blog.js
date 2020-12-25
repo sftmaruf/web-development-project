@@ -34,7 +34,6 @@ fetch('https://corona.lmao.ninja/v2/countries/Bangladesh?yesterday')
         const { cases, todayCases } = res;
         doCountEffect(cases, coronaBdTotalCases);
         doCountEffect(todayCases, coronaBdTodayCases);
-
     });
 
 const doCountEffect = (cases, showingPlace) => {
@@ -54,7 +53,33 @@ const doCountEffect = (cases, showingPlace) => {
             }
         }
     }, 10);
-}
+};
 
+
+//news api fetching
+
+const articleContainer = document.getElementById('articles-container');
+
+fetch("https://dev.to/api/articles")
+    .then(res => res.json())
+    .then(res => {
+        res.map(articles => {
+            const newDiv = document.createElement('div');
+            const newAnchorTag = document.createElement('a');
+            newDiv.classList.add('p-3');
+            newAnchorTag.setAttribute('href', articles.url)
+
+            newAnchorTag.append(articles.title);
+            newDiv.append(newAnchorTag);
+
+            articleContainer.append(newDiv);
+            // console.log(articles.url);
+        })
+    })
+
+//hide tag
+function hideIt() {
+    document.getElementById('hide').style.display = 'none';
+}
 
 

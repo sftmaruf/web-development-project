@@ -1,0 +1,168 @@
+body {
+    background-color: rgba(0, 0, 0, 0.05);
+    padding-bottom: 20px;
+}
+
+.main-container {
+    box-sizing: border-box;
+    margin-top: 20px;
+}
+
+.main-container>div>main {
+    width: auto;
+}
+
+.top-navbar {
+    box-shadow: 0 0 2px gray;
+}
+
+.center-navbar-alignment {
+    padding: 0;
+}
+
+.sidebar {
+    margin-bottom: 30px;
+}
+
+a {
+    color: black;
+}
+
+.sidebar>a, .selection>a {
+    font-family: sans-serif;
+    min-width: 100%;
+    padding: 7px 5px;
+    font-weight: 500;
+    display: block;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.sidebar>a:hover, .hover-effect>a:hover, .highlighted-articles>div:hover {
+    outline: none;
+    text-decoration: none;
+    border-radius: 3px;
+    background-color: rgb(229, 233, 238);
+}
+
+.icon-container {
+    margin-top: 30px;
+}
+
+.icon-container>a>i {
+    color: gray;
+    margin-left: 5px;
+    margin-right: 10px;
+    font-size: 25px;
+}
+
+.icon-container>a>i:hover {
+    color: rgb(83, 83, 83);
+}
+
+.tags-container {
+    height: 200px;
+    overflow: auto;
+}
+
+.selection {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.selection>button {
+    display: none;
+    position: absolute;
+    right: 5px;
+}
+
+.selection>a {
+    max-width: 48px;
+}
+
+.selection>a:hover+button, .selection>button:hover {
+    display: block;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-name: fadeInOpacity;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.active {
+    position: relative;
+}
+
+.active:after {
+    content: "";
+    width: 48px;
+    display: block;
+    margin-top: 6px;
+    margin-top: auto;
+    border-bottom: 2px solid #4150f5;
+}
+
+.option-container {
+    height: 40px;
+}
+
+.active:hover::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 2px;
+}
+
+.card-background {
+    width: 100%;
+    max-width: 325px;
+    background-color: #f8f8f2;
+}
+
+.login-card {
+    height: 325px;
+}
+
+.coronadetails-card {
+    height: 152px;
+}
+
+.highlighted-articles {
+    height: 400px;
+    overflow: auto;
+}
+
+.highlighted-articles>div {
+    padding: 10px 5px;
+    border-bottom: 1px solid rgb(230, 229, 229);
+}
+
+@media(max-width: 1190px) {
+    #mainpage-right-component {
+        display: none;
+        transition: 3s ease;
+    }
+}
+
+@media(max-width: 993px) {
+    #mainpage-left-component {
+        display: none;
+    }
+    #logout-button {
+        margin-top: 5px;
+        margin-left: 0px !important;
+    }
+    #guest-buttons-container, #loggedin-buttons-container {
+        margin-top: 5px;
+    }
+}
