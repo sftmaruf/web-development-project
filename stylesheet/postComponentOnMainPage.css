@@ -1,0 +1,33 @@
+.post-component {
+    background-color: white;
+    box-shadow: 0 0 1px rgb(188, 196, 204);
+}
+
+.post-component:focus {
+    border: 2px solid #3B49DF;
+}
+
+.post-component:hover, .post-component:visited {
+    outline: none;
+    text-decoration: none;
+    color: black;
+}
+
+.post-author-image {
+    padding: 0;
+}
+
+.post-author-image>h6 {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+    background-color: rgb(71, 207, 105);
+}
+
+.post-header-info>#post-title {
+    height: auto;
+}
+
+.post-header-info>#post-title:hover {
+    color: #323EBE;
+}

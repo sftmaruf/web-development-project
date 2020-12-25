@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+section {
+    height: 750px;
+}
+
+.writepost-container {
+    margin-top: 2px;
+    background-color: white;
+    height: 100%;
+    width: 40vw;
+    padding: 20px;
+    box-shadow: 0 0 5px rgb(207, 206, 206);
+}
+
+input, textarea {
+    border: none;
+    padding: 10px;
+}
+
+textarea {
+    height: 100vh;
+}
+
+#post-title {
+    height: 47px;
+    font-size: 35px;
+    font-weight: bold;
+    caret-color: black;
+}
+
+input[type='text']#post-title::placeholder {
+    font-size: 40px;
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgb(147, 159, 165);
+}
+
+.button-container {
+    width: 40vw;
+}
+
+.button-container>div {
+    width: 100%;
+}

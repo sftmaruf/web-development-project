@@ -81,3 +81,5 @@ fetch("https://dev.to/api/articles")
 function hideIt() {
     document.getElementById('hide').style.display = 'none';
 }
+
+

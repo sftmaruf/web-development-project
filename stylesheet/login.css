@@ -1,10 +1,17 @@
 .logggin-container{
     min-height: 90vh;
 }
-.login-form{
+/* this also implement in edit profile panel */
+.login-form, .white-form-background{
     padding: 20px;
-    width: 500px;
+    max-width: 500px;
+    width: 100%;
     background: #f8f8f2;
     border-radius: 5px;
     box-shadow: 0 2px 10px rgb(218, 218, 218);
+}
+
+.auth-failed-alert{
+    margin-top: 20px;
+    width: 500px;
 }
