@@ -6,9 +6,7 @@
         $uConfirmPassword = $_POST['userConfirmPwd'];
 
         require 'dbh.script.php';
-        require "function.script.php";
-        require 'PHP/common.script.php';
-        require "../DB/signupDatabaseQuery.php";
+        require "/xampp/htdocs/Project/PHP/parentScript.script.php";
 
         if(isEmpty($uName, $uEmail, $uPassword, $uConfirmPassword)){
             header('Location: http://localhost/Project/login.php');
@@ -21,7 +19,7 @@
         }
 
         if(isUserExist($conn, $uEmail)){
-            header('Location: http://localhost/Project/PHP/login.php?userexist');
+            header('Location: http://localhost/Project/login.php?userexist');
             exit();
         }else{
           createUser($conn, $uName, $uEmail, $uPassword, $uConfirmPassword);
