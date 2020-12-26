@@ -38,6 +38,6 @@
             header('http://localhost/Project/writepost.php');
         }
     
-        mysqli_stmt_bind_param($stmt, 'ssss', $pTitle, $pTags, $pbody, $pDate, );
+        mysqli_stmt_bind_param($stmt, 'ssss', $pTitle, $pTags, $pbody, $pDate);
     }
     

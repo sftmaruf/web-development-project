@@ -6,6 +6,7 @@
         $uConfirmPassword = $_POST['userConfirmPwd'];
 
         require 'dbh.script.php';
+        require 'function.script.php';
         require "/xampp/htdocs/Project/PHP/parentScript.script.php";
 
         if(isEmpty($uName, $uEmail, $uPassword, $uConfirmPassword)){
